@@ -1,0 +1,3 @@
+[console_scripts]
+linuxsyncpy-preinstall = linuxsyncpy.cli:main
+preinstall = linuxsyncpy.cli:main

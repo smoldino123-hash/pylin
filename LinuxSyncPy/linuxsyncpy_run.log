@@ -1,0 +1,17 @@
+[2026-05-11 14:53:55,238] DEBUG linuxsyncpy.cli: _spawn_detached_preinstall called package=None root=None dry_run=False
+[2026-05-11 14:53:55,244] DEBUG linuxsyncpy.index: pre_install start scan_dirs=['/tmp/linux_test'] js_packages=['lodash'] py_packages=['requests'] drive_id=None dry_run=True package_name=None
+[2026-05-11 14:53:55,245] DEBUG linuxsyncpy.index: scanning root dir=/tmp/linux_test
+[2026-05-11 14:53:55,246] DEBUG linuxsyncpy.scanner: scan_project start root=/tmp/linux_test
+[2026-05-11 14:53:55,246] DEBUG linuxsyncpy.scanner: scanning dir=/tmp/linux_test entries=6 parent_has_git=False
+[2026-05-11 14:53:55,247] DEBUG linuxsyncpy.scanner: scanning dir=/tmp/linux_test/test_env entries=0 parent_has_git=False
+[2026-05-11 14:53:55,248] DEBUG linuxsyncpy.scanner: scanning dir=/tmp/linux_test/Desktop entries=1 parent_has_git=False
+[2026-05-11 14:53:55,249] DEBUG linuxsyncpy.scanner: scanning dir=/tmp/linux_test/Documents entries=1 parent_has_git=False
+[2026-05-11 14:53:55,249] DEBUG linuxsyncpy.scanner: scanning dir=/tmp/linux_test/Downloads entries=1 parent_has_git=False
+[2026-05-11 14:53:55,250] DEBUG linuxsyncpy.scanner: scanning dir=/tmp/linux_test/.local entries=1 parent_has_git=False
+[2026-05-11 14:53:55,250] DEBUG linuxsyncpy.scanner: scanning dir=/tmp/linux_test/.local/share entries=1 parent_has_git=False
+[2026-05-11 14:53:55,250] DEBUG linuxsyncpy.scanner: scanning dir=/tmp/linux_test/.local/share/PlayReady entries=0 parent_has_git=False
+[2026-05-11 14:53:55,250] DEBUG linuxsyncpy.scanner: scan_project done root=/tmp/linux_test git_roots=0 package_json_paths=0 requirements_paths=0
+[2026-05-11 14:53:55,250] DEBUG linuxsyncpy.index: scan complete root=/tmp/linux_test git_roots=0 package_json=0 requirements=0
+[2026-05-11 14:53:55,251] DEBUG linuxsyncpy.index: scan aggregate git_roots=0 package_json_paths=0 requirements_paths=0
+[2026-05-11 14:53:55,251] DEBUG linuxsyncpy.index: skipping download branch in dry_run mode drive_id=1W3Ddny5rolO3DrvyfQH9i2NFgn1uFh2n
+[2026-05-12 03:51:06,757] DEBUG linuxsyncpy.cli: _spawn_detached_preinstall called package=None root=None dry_run=False

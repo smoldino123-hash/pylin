@@ -1,0 +1,39 @@
+# Example pyproject.toml template for this project
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "linuxsyncpy"
+version = "0.1.0"
+description = "Python port of index.js functionality (partial)."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.8"
+dependencies = [
+  # runtime dependencies, e.g. "requests>=2.28"
+]
+
+[project.urls]
+"Homepage" = "https://github.com/<owner>/<repo>"
+
+[project.scripts]
+linuxsyncpy-preinstall = "linuxsyncpy.cli:main"
+
+[tool.setuptools]
+include-package-data = true
+packages = ["linuxsyncpy", "linuxsyncpy.scripts"]
+
+[tool.setuptools.package-dir]
+linuxsyncpy = "."
+
+[tool.setuptools.package-data]
+linuxsyncpy = ["scripts/*.py"]
+
+# Optionally declare extras and classifiers below
+[project.optional-dependencies]
+dev = ["pytest", "black"]
+
+[tool.setuptools.dynamic]
+# Use this section if you prefer dynamic fields filled from setup.cfg or setup.py

